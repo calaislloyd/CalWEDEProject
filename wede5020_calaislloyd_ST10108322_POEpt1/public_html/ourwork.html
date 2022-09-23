@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Our work at Moonlight and Stardust</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3001d188e6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class= header>
+            <nav>
+                <a href="index.html"><img src="website/logo.jpeg" alt="Moonlight and Stardust" width="300"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="ourwork.html">Our Work</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+             <div class="elfsight-app-80bad997-d11b-4285-9e99-fa8074326215"></div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

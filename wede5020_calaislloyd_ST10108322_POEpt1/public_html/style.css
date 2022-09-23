@@ -1,0 +1,248 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Aug 2022, 5:08:05 PM
+    Author     : Sialac
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-image: url(website/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F5FFFA;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 40px;
+    font-size: 25px;
+    color: #556B2F;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #556B2F;
+    background: #556B2F;
+    transition: 1s;
+}
+nav .fa-xmark, nav .fa-bars{
+    display: none;
+}
+
+@media(max-width: 700px){
+ .text-box h1{
+    font-size: 20px;
+} 
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    background: #F5FFFA;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+
+nav .fa-xmark, nav .fa-bars{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+            
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}.fa-solid {
+
+}
+
+/*-----about us-----*/
+.aboutUs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-weight: 22px;
+    padding: 10px;      
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+.contact-box
+{
+    width: 500px;
+    background-color: rgba(100%,0,0,0);
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+        
+}
+form
+{
+    margin: 35px;
+    
+}
+.input-field
+{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    outline: none;
+        
+}
+.textarea-field
+{
+    height: 150px;
+    padding-top: 10px;
+    
+}
+.send-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.send-btn:hover{
+    border: 1px solid #556B2F;
+    background: #556B2F;
+    transition: 1s;
+}
+
+/*-----gallery-----*/
+
+*
+.gallery{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+.input{
+    display: none;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    font-position: relative;
+    margin: 40px 0;
+}
+.photogallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.earrings{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #556B2F;
+    cursor: pointer;
+}
+.earrings img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3001d188e6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class= header>
+            <nav>
+                <a href="index.html"><img src="website/logo.jpeg" alt="Moonlight and Stardust" width="300"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="ourwork.html">Our Work</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="photogallery">
+                <div class="earrings">
+                    <img src="website/1.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/2.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/3.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/4.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/5.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/6.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/7.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/8.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/9.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/10.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/11.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/12.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/13.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/14.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/15.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/16.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/17.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/18.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/19.jpeg">
+                </div>
+                <div class="earrings">
+                    <img src="website/20.jpeg">
+                </div>
+                
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
